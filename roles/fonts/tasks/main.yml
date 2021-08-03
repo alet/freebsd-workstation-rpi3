@@ -1,0 +1,13 @@
+---
+
+- name: Add agreement with license to make.conf
+  community.general.sysrc:
+    name: WITH_MSWINDOWS_LICENSE
+    state: present
+    value: "YES"
+    path: /etc/make.conf
+
+- name: Install fonts
+  pkgng:
+    name:
+      - webfonts

@@ -1,0 +1,14 @@
+---
+# This playbook configure reserve workstation for home backup use
+
+- name: Configure as workstation-rpi3
+  hosts: all
+  become: yes
+  gather_facts: false
+  vars:
+    - timezone: Europe/Kiev
+
+  roles:
+    - deps
+    - fonts
+    - soft

@@ -1,0 +1,53 @@
+---
+
+- name: Install soft 1
+  pkgng:
+    autoremove: yes
+    name:
+      - i3
+      - i3status
+      - dmenu
+      - firefox-esr
+      - thunderbird
+      - mutt
+      - gnome-terminal
+      - anki
+      - keepassxc
+      - duplicity
+      - lynx
+      - telegram-cli
+      - telegram-desktop
+      - kcharselect
+      - texlive-base
+      - tex-xetex
+      - tex-luatex
+
+- name: Clean pkg's
+  command: pkg clean --yes
+
+- name: Install soft 2
+  pkgng:
+    autoremove: yes
+    name:
+      - calibre
+      - mplayer
+      - cmus
+      - audacious
+      - audacious-plugins
+      - easytag
+      - espeak
+      - gimp-app
+      - gimp-beautify-plugin
+      - inkscape
+      - okular
+      - zathura-djvu
+      - zathura-pdf-poppler
+      - wireshark-lite
+      - libreoffice
+      - ru-libreoffice
+      - uk-libreoffice
+      - anydesk
+      - goldendict
+
+- name: Clean pkg's
+  command: pkg clean --yes

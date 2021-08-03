@@ -1,0 +1,10 @@
+---
+
+- name: Install dependencies
+  pkgng:
+    name:
+      - curl
+      - unrar
+      - iperf
+      - iperf3
+      - tree
