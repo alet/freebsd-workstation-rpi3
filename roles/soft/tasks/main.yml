@@ -4,6 +4,7 @@
   pkgng:
     autoremove: yes
     name:
+      - Xorg
       - i3
       - i3status
       - dmenu
